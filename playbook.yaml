@@ -3,3 +3,10 @@
   hosts: windows
   tasks:
     - win_ping:
+
+    - win_file:
+        path: C:\Temp\foo.conf
+        state: touch
+
+    - win_stat:
+        path: C:\Temp\foo.conf
